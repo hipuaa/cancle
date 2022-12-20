@@ -16,24 +16,24 @@
 <h3>
 <?php
 echo "<b><font color=white>HTTP_SEC_CH_UA:</b><font color=#9b8aff>";
-echo $_SERVER["HTTP_SEC_CH_UA"];
+echo htmlspecialchars($_SERVER["HTTP_SEC_CH_UA"]);
 echo "<br>";
 echo "<b><font color=white>HTTP_SEC_CH_UA_MOBILE:</b><font color=#9b8aff>";
-echo $_SERVER["HTTP_SEC_CH_UA_MOBILE"];
+echo htmlspecialchars($_SERVER["HTTP_SEC_CH_UA_MOBILE"]);
 echo "<br>";
 echo "<b><font color=white>HTTP_SEC_CH_UA_PLATFORM:</b><font color=#9b8aff>";
-echo $_SERVER["HTTP_SEC_CH_UA_PLATFORM"];
+echo htmlspecialchars($_SERVER["HTTP_SEC_CH_UA_PLATFORM"]);
 echo "<br>";
 echo "<b><font color=white>HTTP_USER_AGENT:</b><font color=#9b8aff>";
 echo htmlspecialchars($_SERVER["HTTP_USER_AGENT"]);
 echo "<br><b><font color=white>REMOTE_ADDR:</b><font color=#9b8aff>";
-echo $_SERVER['REMOTE_ADDR'];
+echo htmlspecialchars($_SERVER['REMOTE_ADDR']);
 echo "<br><b><font color=white>HTTP VERSION:</b><font color=#9b8aff>";
-echo $_SERVER['X_SPDY'];
+echo htmlspecialchars($_SERVER['X_SPDY']);
 echo "<br><b><font color=white>SSL PROTOCOL:</b><font color=#9b8aff>";
-echo $_SERVER['SSL_PROTOCOL'];
+echo htmlspecialchars($_SERVER['SSL_PROTOCOL']);
 echo "<br><b><font color=white>SSL CIPHER:</b><font color=#9b8aff>";
-echo $_SERVER['SSL_CIPHER'];
+echo htmlspecialchars($_SERVER['SSL_CIPHER']);
 echo "<br>";
 echo "<img src=http3.webp width=240px alt=http3.webp><br>";
 echo "<img src=ipv6.webp width=240px alt=ipv6.webp><br>";
